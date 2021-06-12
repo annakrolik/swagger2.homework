@@ -2,7 +2,6 @@ package pl.bykowski.springbootswaggerexample;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import io.swagger.annotations.ApiParam;
 
 @ApiModel("Personal data of Student")
 public class Student {
@@ -11,15 +10,6 @@ public class Student {
     private int id;
     private String name;
     private String surname;
-
-    public Student() {
-    }
-
-    public Student(int id, String name, String surname) {
-        this.id = id;
-        this.name = name;
-        this.surname = surname;
-    }
 
     public int getId() {
         return id;
